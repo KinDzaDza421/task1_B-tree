@@ -27,7 +27,7 @@ class BTree<T extends Comparable<T>> {
         this.maxChildrenSize = maxKeySize + 1;
     }
 
-    public int size() { //возвращает кол-во элементов в дереве
+    public int size() { 
         return size;
     }
 
@@ -409,7 +409,7 @@ class BTree<T extends Comparable<T>> {
             this.childrenSize = 0;
         }
 
-        private T getKey(int index) { //получаем данные по ключу
+        private T getKey(int index) { 
             return keys[index];
         }
 
@@ -418,7 +418,7 @@ class BTree<T extends Comparable<T>> {
             Arrays.sort(keys, 0, keysSize);
         }
 
-        private int numberOfKeys() { //возвращает кол-во ключей
+        private int numberOfKeys() {
             return keysSize;
         }
 
@@ -454,7 +454,7 @@ class BTree<T extends Comparable<T>> {
             }
         }
 
-        private int numberOfChildren() { //возвращает кол-во потомков
+        private int numberOfChildren() { 
             return childrenSize;
         }
 
